@@ -1,0 +1,50 @@
+1:FormatTestSuite.KeyRedifenitionTest
+3:ParserTestSuite.IntTest
+4:ParserTestSuite.InvalidIntTest
+5:ParserTestSuite.FloatTest
+6:ParserTestSuite.InvalidFloatTest
+7:ParserTestSuite.StringTest
+8:ParserTestSuite.InvalidStringTest
+9:ParserTestSuite.ArrayTest
+10:ParserTestSuite.DiffTypesArrayTest
+11:ParserTestSuite.CommentsTest
+12:ParserTestSuite.SectionTest
+13:ParserTestSuite.MultiSectionTest
+14:ParserTestSuite.GetSectionTest
+45:KeyValidation/InvalidFormatTestSuite.InValidTest/"!key = \"value\""
+46:KeyValidation/InvalidFormatTestSuite.InValidTest/"key = \n\"value\""
+47:KeyValidation/InvalidFormatTestSuite.InValidTest/"      =  \"value\"   "
+48:KeyValidation/InvalidFormatTestSuite.InValidTest/"=  \"value\""
+49:KeyValidation/InvalidFormatTestSuite.InValidTest/" key**123 =  \"value\""
+50:KeyValidation/InvalidFormatTestSuite.InValidTest/" . =  \"value\""
+51:KeyValidation/InvalidFormatTestSuite.InValidTest/" .key2.key3 =  \"value\""
+52:KeyValidation/InvalidFormatTestSuite.InValidTest/" key1. =  \"value\""
+53:ValueValidation/InvalidFormatTestSuite.InValidTest/"key = "
+54:ValueValidation/InvalidFormatTestSuite.InValidTest/"key = abcd"
+55:IntValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = 2+"
+56:IntValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = 2-2"
+57:IntValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = 4+8"
+58:IntValueValidation/InvalidFormatTestSuite.InValidTest/"key4 = +"
+59:FloatValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = .0"
+60:FloatValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = 1."
+61:FloatValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = +.1"
+62:FloatValueValidation/InvalidFormatTestSuite.InValidTest/"key4 = +."
+63:FloatValueValidation/InvalidFormatTestSuite.InValidTest/"key5 = ."
+64:StringValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = \"Hello world"
+65:StringValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = \"ITMO\"University\""
+66:StringValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = \"Bjarne\" \"stroustrup\""
+67:BoolValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = tru"
+68:BoolValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = alse"
+69:BoolValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = true true"
+70:BoolValueValidation/InvalidFormatTestSuite.InValidTest/"key4 = fal se"
+71:BoolValueValidation/InvalidFormatTestSuite.InValidTest/"key5 = truefalse"
+72:ArrayValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = ["
+73:ArrayValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = ]"
+74:ArrayValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = [1;2;3]"
+75:ArrayValueValidation/InvalidFormatTestSuite.InValidTest/"key4 = [1,2,3,4"
+76:ArrayValueValidation/InvalidFormatTestSuite.InValidTest/"key5 = [[1,2],[2,[3,4,5]"
+77:SectionValueValidation/InvalidFormatTestSuite.InValidTest/"key1 = []"
+78:SectionValueValidation/InvalidFormatTestSuite.InValidTest/"key2 = {section-1}"
+79:SectionValueValidation/InvalidFormatTestSuite.InValidTest/"key3 = [section-1.]"
+80:SectionValueValidation/InvalidFormatTestSuite.InValidTest/"key4 = [.section-1]"
+81:CommentValueValidation/InvalidFormatTestSuite.InValidTest/"# comment \n newline comment"

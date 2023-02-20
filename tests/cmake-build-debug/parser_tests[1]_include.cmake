@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/th3me/CLionProjects/Proga/OMFLparser_________lab6/labwork-6-NikEvt/tests/cmake-build-debug/parser_tests[1]_tests.cmake")
+  include("C:/Users/th3me/CLionProjects/Proga/OMFLparser_________lab6/labwork-6-NikEvt/tests/cmake-build-debug/parser_tests[1]_tests.cmake")
+else()
+  add_test(parser_tests_NOT_BUILT parser_tests_NOT_BUILT)
+endif()
