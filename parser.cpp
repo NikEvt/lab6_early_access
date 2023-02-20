@@ -125,14 +125,7 @@ omfl::parser omfl::parse(const std::string &str) {
             std::string section;
             for (int i = 1; i < line.length(); ++i) {
                 if(line[i] == '.'){
-                    for (int j = 0; j < prs.primary_section.size(); ++j) {
-                        if(prs.primary_section[i].name == section){
-                            argument *newArg = new argument;
 
-                        } else {
-
-                        }
-                    }
                 }
                 section.push_back(line[i]);
             }
@@ -142,7 +135,7 @@ omfl::parser omfl::parse(const std::string &str) {
     vector<std::string> tokens;
     split_string(str, '=', tokens, 1);
 
-    return prs;
+    return *&prs;
 }
 
 omfl::parser omfl::parse(const std::filesystem::path &path) {

@@ -9,7 +9,6 @@ namespace omfl {
 
     class argument{
     public:
-
         std::string name;
 
         argument Get(const std::string& arg);
@@ -40,14 +39,13 @@ namespace omfl {
 
         bool AsBool() const;
 
-
     private:
-        bool IsValid_;
-        bool IsInt_;
-        bool IsFloat_;
-        bool IsString_;
-        bool IsArray_;
-        bool IsBool_;
+        bool IsValid_ = true;
+        bool IsInt_ = false;
+        bool IsFloat_ = false;
+        bool IsString_ = false;
+        bool IsArray_ = false;
+        bool IsBool_ = false;
     };
 
     class parser {
@@ -69,8 +67,7 @@ namespace omfl {
             this->IsValid = other.IsValid;
             this->primary_section = other.primary_section;
         }
-        vector<argument> primary_section;
-    private:
+        argument primary_section;
 
 
 
